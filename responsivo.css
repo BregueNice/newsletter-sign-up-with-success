@@ -1,0 +1,135 @@
+:root {
+    --cinza-escuro: hsl(234, 29%, 20%);
+    --cinza-carvao: hsl(235, 18%, 26%);
+    --cinza: hsl(231, 7%, 60%);
+    --branco: hsl(0, 0%, 100%);
+    --tomate: hsl(4, 100%, 67%);
+
+    --fonte: 'Roboto', sans-serif;
+}
+
+
+
+@media (max-width: 390px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: var(--fonte);
+    }
+    
+    .responsivo{
+        display: none;
+    }
+
+    .imgResponsivo{
+        height: auto;
+        object-fit: contain;
+    }
+
+    .esconder{
+        display: none;
+    }
+
+    p {
+        font-weight: 400;
+        color: var(--cinza-escuro);
+        font-size: 16px;
+    }
+
+    h1{
+        color: var(--cinza-escuro);
+    }
+
+    .atencao {
+        color: var(--tomate);
+        font-size: 10px;
+        /* opacity: 0; */
+        padding-right: 10px;
+    }
+
+    .teste{
+        display: flex;
+    }
+
+    .vermei {
+        background-color: rgba(248, 129, 129, 0.5);
+        opacity: 60%;
+        border: 1px solid var(--tomate);
+        color: rgb(240, 114, 114);
+    }
+
+    .strong {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* padding-inline: 80px; */
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        padding-inline: 20px;
+    }
+
+    .respon{
+        display: none;
+    }
+
+    a{
+        background-color: var(--cinza-escuro);
+        text-decoration: none;
+        color: var(--branco);
+        padding: 15px;
+        width: 300px;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    input {
+        width: 300px;
+        padding: 12px;
+        opacity: 30%;
+        border-radius: 6px;
+        box-shadow: 0px 0px 1px gray;
+    }
+
+    input:focus {
+        /* background-color: aqua; */
+        opacity: 100%;
+        outline: none;
+        border: 1px solid var(--cinza-carvao);
+    }
+
+    .icones {
+        width: 17px;
+        height: 17px;
+        padding-right: 5px;
+    }
+    
+    .coluna {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        width: auto;
+        height: 100vh;
+        padding-right: 100px;
+        justify-content: space-evenly;
+    }
+
+    .sucessimg {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .distanciamento{
+        margin-top: 200px;
+    }
+}
