@@ -1,0 +1,130 @@
+:root {
+    --cinza-escuro: hsl(234, 29%, 20%);
+    --cinza-carvao: hsl(235, 18%, 26%);
+    --cinza: hsl(231, 7%, 60%);
+    --branco: hsl(0, 0%, 100%);
+    --tomate: hsl(4, 100%, 67%);
+
+    --fonte: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fonte);
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.principal {
+    /* padding: 10px; */
+    width: 42vw;
+    height: 50vh;
+    background-color: var(--branco);
+    border-radius: 15px;
+    display: flex;
+}
+
+img {
+    width: 350px;
+    padding-top: 5px;
+    height: 470px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza-carvao);
+}
+
+/* .texto{
+    padding-inline: 80px; 
+}*/
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* text-align: start; */
+    padding-inline: 50px;
+    padding-bottom: 50px;
+}
+
+p{
+    font-weight: 400;
+    color: var(--cinza-escuro);
+    font-size: 16px;
+}
+
+a {
+    background-color: var(--cinza-escuro);
+    text-decoration: none;
+    color: var(--branco);
+    padding: 15px;
+    width: 300px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+a:hover{
+    background-color: var(--tomate);
+    box-shadow: 0px 0px 10px var(--tomate);
+}
+
+input{
+    width: 300px;
+    padding: 12px;
+    opacity: 30%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px gray;
+}
+
+input:focus{
+    /* background-color: aqua; */
+    opacity: 100%;
+    outline: none;
+    border:1px solid var(--cinza-carvao);
+}
+
+strong{
+    color: var(--tomate);
+    font-size: 10px;
+    /* opacity: 0; */
+    padding-right: 35px;
+}
+
+.strong{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding-inline: 80px; */
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.vermei{
+    background-color: rgba(248, 129, 129, 0.5);
+    opacity: 60%;
+    border:1px solid var(--tomate);
+    color: rgb(240, 114, 114);
+}
+
+.icones{
+    width: 17px;
+    height: 17px;
+    padding-right: 5px;
+}
