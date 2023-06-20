@@ -10,6 +10,7 @@
 
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -31,25 +32,36 @@
     <!-- Sign-up form start -->
     <div class="container">
         <div class="principal">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="imgResponsivo">
             <div class="texts">
+
                 <h1>Stay updated!</h1>
 
                 <p class="texto">Join 60,000+ product managers receiving monthly updates on:</p>
 
-                <p><img src="./assets/images/icon-list.svg" alt="" class="icones">Product discovery and building what
-                    matters</p>
-                <p><img src="./assets/images/icon-list.svg" alt="" class="icones">Measuring to ensure updates are a
-                    success</p>
-                <p><img src="./assets/images/icon-list.svg" alt="" class="icones">And much more!</p>
+                <div class="teste">
+                    <img src="./assets/images/icon-list.svg" alt="" class="icones">
+                    <p>Product discovery and building what
+                        matters</p>
+                </div>
+                <div class="teste">
+                    <img src="./assets/images/icon-list.svg" alt="" class="icones">
+                    <p>Measuring to ensure updates are a
+                        success</p>
+                </div>
+                <div class="teste">
+                    <img src="./assets/images/icon-list.svg" alt="" class="icones">
+                    <p>And much more!</p>
+                </div>
 
 
-                <p class="strong">Email address <strong>Valid email required</strong>
+                <p class="strong">Email address <strong class="atencao">Valid email required</strong>
                     <input type="email" name="" id="" placeholder="email@company.com">
                 </p>
                 <a href="">Subscribe to monthly newsletter</a>
             </div>
             <div>
-                <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+                <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="responsivo">
             </div>
         </div>
     </div>
@@ -58,22 +70,24 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div class="container">
-        <div class="principal">
-        <h1>Thanks for subscribing!</h1>
+    <div class="container esconder">
+        <div class="principal coluna">
+            <img src="./assets/images/icon-success.svg" alt="" class="sucessimg">
+            <h1 class="cinza">Thanks for subscribing!</h1>
 
-        A confirmation email has been sent to ash@loremcompany.com.
-        Please open it and click the button inside to confirm your subscription.
-
-        Dismiss message
+            <p>A confirmation email has been sent to <strong class="email">@loremcompany.com.</strong>
+                Please open it and click the button inside to confirm your subscription.</p>
+                
+            <a href="" class="distanciamento">Dismiss message</a>
         </div>
     </div>
     <!-- Success message end -->
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer class="esconder">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+        </div>
+    </footer>
 </body>
 
 </html>
