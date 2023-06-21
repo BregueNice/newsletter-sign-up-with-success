@@ -135,4 +135,31 @@
     .escondeM{
         display: none;
     }
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    .ajuste{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .atencao {
+        color: var(--tomate);
+        font-size: 10px;
+        /* opacity: 0; */
+        padding-right: 12px;
+        display: none;
+    }
+
+    .strong {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
