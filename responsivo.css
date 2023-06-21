@@ -132,4 +132,7 @@
     .distanciamento{
         margin-top: 200px;
     }
+    .escondeM{
+        display: none;
+    }
 }
