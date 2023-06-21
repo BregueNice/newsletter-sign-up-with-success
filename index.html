@@ -30,7 +30,7 @@
 <body>
 
     <!-- Sign-up form start -->
-    <div class="container">
+    <div class="container" id="aparece1">
         <div class="principal">
             <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" class="imgResponsivo">
             <div class="texts">
@@ -55,10 +55,10 @@
                 </div>
 
 
-                <p class="strong">Email address <strong class="atencao">Valid email required</strong>
-                    <input type="email" name="" id="" placeholder="email@company.com">
+                <p class="strong">Email address <strong class="atencao" id="att">Valid email required</strong>
+                    <input type="email" name="" id="iEmail" placeholder="email@company.com">
                 </p>
-                <a href="">Subscribe to monthly newsletter</a>
+                <a href="#" id="botao" onclick="mostrar()">Subscribe to monthly newsletter</a>
             </div>
             <div>
                 <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="responsivo">
@@ -75,8 +75,8 @@
             <img src="./assets/images/icon-success.svg" alt="" class="sucessimg">
             <h1 class="cinza">Thanks for subscribing!</h1>
 
-            <p>A confirmation email has been sent to <strong class="email">@loremcompany.com.</strong>
-                Please open it and click the button inside to confirm your subscription.</p>
+            <p>A confirmation email has been sent to <strong class="email" id="textoE"></strong>
+                Please open it and <br>click the button inside to confirm your <br>subscription.</p>
                 
             <a href="" class="distanciamento">Dismiss message</a>
         </div>
@@ -89,5 +89,6 @@
         </div>
     </footer>
 </body>
+<script src="./index.js"></script>
 
 </html>
