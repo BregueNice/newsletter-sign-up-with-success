@@ -10,7 +10,7 @@
 
 
 
-@media (max-width: 390px){
+@media (min-width: 300px) and (max-width: 1000px){
     *{
         margin: 0;
         padding: 0;
