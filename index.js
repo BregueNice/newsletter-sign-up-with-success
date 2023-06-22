@@ -8,7 +8,7 @@ function mostrar(){
         document.getElementById('iEmail').classList.add('vermei');
     }else{
     let atv = document.getElementsByClassName('esconder');
-    if(atv.length > 1){
+    if(atv.length > 0){
         atv[0].classList.remove('esconder')
     }
     document.getElementById('aparece1').classList.add('esconder')
